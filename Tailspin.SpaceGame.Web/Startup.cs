@@ -46,8 +46,9 @@ namespace TailSpin.SpaceGame.Web
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
+                //app.UseExceptionHandler("/Home/Error");
+                //app.UseHsts();
+                app.UseDeveloperExceptionPage();
             }
 
             app.UseHttpsRedirection();
